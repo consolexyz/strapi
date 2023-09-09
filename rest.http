@@ -1,0 +1,18 @@
+GET  http://localhost:1337/api/products?populate=category
+
+###
+
+GET  http://localhost:1337/api/categories?populate=products
+
+
+###
+
+POST http://localhost:1337/api/products
+Content-Type: application/json
+{
+    "name":"bags",
+    "price": 100,
+    "category":{
+        "name": "accessories"
+    }
+}
